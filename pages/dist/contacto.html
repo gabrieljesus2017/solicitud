@@ -50,7 +50,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navHeaderItems">
               <li class="nav-item active">
-                <a class="nav-link" href="../index.html"
+                <a class="nav-link" href="../index.php"
                   >INICIO<span class="sr-only"></span
                 ></a>
               </li>
@@ -74,14 +74,14 @@
     <br />
     <!--en esta seccion usamos una plantilla de bootstrap donde el cliente puede guardar sus datos usando base de datos-->
     <section>
-      <form action="registro.php" method="POST" class="row g-3">
+      <!-- <form action="registro.php" method="POST" class="row g-3">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Nombres</label>
-          <input type="text" class="form-control" id="inputEmail4" />
+          <input type="text" class="form-control" id="inputName" />
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputPassword4" />
+          <input type="email" class="form-control" id="inputEmail" />
         </div>
         <div class="col-12">
           <label for="inputServicios" class="form-label"
@@ -99,7 +99,7 @@
           <input
             type="text"
             class="form-control"
-            id="inputAddress2"
+            id="inputAddress"
             placeholder="Apartment, studio, or floor"
           />
         </div>
@@ -116,6 +116,78 @@
           <input type="text" class="form-control" id="inputPhone" />
         </div>
 
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Ingresar</button>
+        </div>
+      </form> -->
+
+      <form action="registro.php" method="POST" class="row g-3">
+        <div class="col-md-6">
+          <label for="inputName" class="form-label">Nombres</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputName"
+            name="inputName"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            name="inputEmail"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputServicios" class="form-label"
+            >Servicio de Interes</label
+          >
+          <select id="inputServicios" class="form-select" name="inputServicios">
+            <option selected>Transporte y Distribucion</option>
+            <option>Supply y Logistica</option>
+            <option>Comercio Exterior</option>
+            <option>Servicio Tecnico</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Direccion</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            name="inputAddress"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputZip1" class="form-label">Departamento</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputZip1"
+            name="inputZip1"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">Cuidad</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCity"
+            name="inputCity"
+          />
+        </div>
+        <div class="col-md-2">
+          <label for="inputPhone" class="form-label">Telefono</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhone"
+            name="inputPhone"
+          />
+        </div>
         <div class="col-12">
           <button type="submit" class="btn btn-success">Ingresar</button>
         </div>

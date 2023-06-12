@@ -53,7 +53,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navHeaderItems">
               <li class="nav-item active">
-                <a class="nav-link" href="./index.html">INICIO<span class="sr-only"></span></a>
+                <a class="nav-link" href="./index.php">INICIO<span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/quienesomos.html">QUIENES SOMOS</a>
