@@ -1,6 +1,6 @@
 <?php
   // conexión con la base de datos y el servidor
-  $server = "127.0.0.1:3306";
+  $server = "localhost";
   $user = "root";
   $pass = "";
   $db = "solicitud";
